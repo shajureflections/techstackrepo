@@ -1,0 +1,10 @@
+web/techstack/__pycache__
+common/__pycache__
+web/swagger/__pycache__
+web/__pycache__
+repository/__pycache__
+.idea/
+middleware/__pycache__
+.vscode/
+tests/__pycache__/
+migrations/

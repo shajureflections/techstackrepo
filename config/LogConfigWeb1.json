@@ -1,0 +1,228 @@
+{
+    "version": 1,
+  "formatters": {
+    "basic": {
+      "format": "[%(asctime)s] [%(levelname)s]: %(message)s"
+    }
+  },
+    "handlers": {
+        "debug_handler_application": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/application/debug.log",
+            "mode": "a",
+            "formatter": "basic",
+            "level": "DEBUG"
+        },
+        "info_handler_application": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/application/info.log",
+            "mode": "a",
+            "level": "INFO",
+            "formatter": "basic"
+        },
+        "warning_handler_application": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/application/warning.log",
+            "mode": "a",
+            "level": "WARN",
+            "formatter": "basic"
+        },
+        "error_handler_application": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/application/error.log",
+            "mode": "a",
+            "level": "ERROR",
+            "formatter": "basic"
+        },
+        "debug_handler_third_party": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/third_party/debug.log",
+            "mode": "a",
+            "formatter": "basic",
+            "level": "DEBUG"
+        },
+        "info_handler_third_party": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/third_party/info.log",
+            "mode": "a",
+            "level": "INFO",
+            "formatter": "basic"
+        },
+        "warning_handler_third_party": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/third_party/warning.log",
+            "mode": "a",
+            "level": "WARN",
+            "formatter": "basic"
+        },
+        "error_handler_third_party": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/third_party/error.log",
+            "mode": "a",
+            "level": "ERROR",
+            "formatter": "basic"
+        },
+        "debug_handler_audit_log": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/audit_log/debug.log",
+            "mode": "a",
+            "formatter": "basic",
+            "level": "DEBUG"
+        },
+        "info_handler_audit": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/audit_log/info.log",
+            "mode": "a",
+            "level": "INFO",
+            "formatter": "basic"
+        },
+        "warning_handler_audit": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/audit_log/warning.log",
+            "mode": "a",
+            "level": "WARN",
+            "formatter": "basic"
+        },
+        "error_handler_audit": {
+            "class": "logging.FileHandler",
+            "filename": "../logs/audit_log/error.log",
+            "mode": "a",
+            "level": "ERROR",
+            "formatter": "basic"
+        },
+        "debug_handler_application_stderr": {
+            "class": "logging.StreamHandler",
+            "formatter": "basic",
+            "level": "DEBUG"
+        },
+        "info_handler_application_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "INFO",
+            "formatter": "basic"
+        },
+        "warning_handler_application_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "WARN",
+            "formatter": "basic"
+        },
+        "error_handler_application_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "ERROR",
+            "formatter": "basic"
+        },
+        "debug_handler_third_party_stderr": {
+            "class": "logging.StreamHandler",
+            "formatter": "basic",
+            "level": "DEBUG"
+        },
+        "info_handler_third_party_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "INFO",
+            "formatter": "basic"
+        },
+        "warning_handler_third_party_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "WARN",
+            "formatter": "basic"
+        },
+        "error_handler_third_party_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "ERROR",
+            "formatter": "basic"
+        },
+        "debug_handler_audit_log_stderr": {
+            "class": "logging.StreamHandler",
+            "formatter": "basic",
+            "level": "DEBUG"
+        },
+        "info_handler_audit_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "INFO",
+            "formatter": "basic"
+        },
+        "warning_handler_audit_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "WARN",
+            "formatter": "basic"
+        },
+        "error_handler_audit_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "ERROR",
+            "formatter": "basic"
+        }
+    },
+    "loggers": {
+        "debug_application": {
+            "handlers": [
+                "debug_handler_application_stderr"
+            ],
+            "level": "DEBUG"
+        },
+        "info_application": {
+            "handlers": [
+                "info_handler_application_stderr"
+            ],
+            "level": "INFO"
+        },
+        "warning_application": {
+            "handlers": [
+                "warning_handler_application_stderr"
+            ],
+            "level": "WARN"
+        },
+        "error_application": {
+            "handlers": [
+                "error_handler_application_stderr"
+            ],
+            "level": "ERROR"
+        },
+        "debug_third_party": {
+            "handlers": [
+                "debug_handler_third_party_stderr"
+            ],
+            "level": "DEBUG"
+        },
+        "info_third_party": {
+            "handlers": [
+                "info_handler_third_party_stderr"
+            ],
+            "level": "INFO"
+        },
+        "warning_third_party": {
+            "handlers": [
+                "warning_handler_third_party_stderr"
+            ],
+            "level": "WARN"
+        },
+        "error_third_party": {
+            "handlers": [
+                "error_handler_third_party_stderr"
+            ],
+            "level": "ERROR"
+        },
+         "debug_audit": {
+            "handlers": [
+                "debug_handler_audit_log_stderr"
+            ],
+            "level": "DEBUG"
+        },
+        "info_audit": {
+            "handlers": [
+                "info_handler_audit_stderr"
+            ],
+            "level": "INFO"
+        },
+        "warning_audit": {
+            "handlers": [
+                "warning_handler_audit_stderr"
+            ],
+            "level": "WARN"
+        },
+        "error_audit": {
+            "handlers": [
+                "error_handler_audit_stderr"
+            ],
+            "level": "ERROR"
+        }
+    }
+}
